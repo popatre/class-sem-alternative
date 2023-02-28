@@ -81,7 +81,9 @@ Venue behaviours are:
 
 -   `makeBooking`
 
-    -   takes a musician as an argument and booked them, as long as the venue does not currently have anyone booked.
+    -   takes a musician as an argument and books them, as long as the venue does not currently have anyone booked.Should console log 'you have booked <musicanName>'
+
+        Otherwise:
         Console logs 'musicianName is booked to perform'
 
 -   `isVacant`
