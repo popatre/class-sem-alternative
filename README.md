@@ -7,7 +7,7 @@ Create a Musician class
 It should have the following properties:
 
 -   name: The name given
--   instrument: the instrument they play
+-   instrument: the instrument they play - defaults to 'singer'
 -   skillLevel: skill on the instrument
 -   money: current money they have/can earn
 -   skill: their special skill - defaults to 'make music'
@@ -24,7 +24,7 @@ It should have the following properties:
 
 -   willDuet:
 
-    -   Will take a musician as an argument and return a boolean if the musician will duet with them. By default, a musician will duet with any other instrument
+    -   Will take a Musician as an argument and return a boolean if the musician will duet with them. By default, a musician will duet with any other instrument
 
 ## Musician Types - should extend Musician
 
