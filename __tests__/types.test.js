@@ -39,5 +39,6 @@ describe("JohnBonham", () => {
         expect(testJohn.name).toBe("John");
         expect(testJohn.skillLevel).toBe(200);
         expect(testJohn.money).toBe(100000);
+        expect(testJohn.skill).toBe("stick spin");
     });
 });

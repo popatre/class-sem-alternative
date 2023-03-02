@@ -1,8 +1,8 @@
 const Musician = require("./musician");
 
 class Drummer extends Musician {
-    constructor(name, skillLevel, money) {
-        super(name, "drums", skillLevel, money, "stick spin");
+    constructor(name, skillLevel, money, skill = "fill") {
+        super(name, "drums", skillLevel, money, skill);
 
         this.hates = "singer";
     }
@@ -15,9 +15,6 @@ class Drummer extends Musician {
         return performer.instrument !== this.hates;
     }
 }
-
-const Drum = new Drummer("Danny", 10, 1000);
-console.log(Drum);
 
 class Bassist extends Musician {
     constructor(name, skillLevel, money) {
@@ -36,7 +33,7 @@ class Bassist extends Musician {
 
 class JohnBonham extends Drummer {
     constructor() {
-        super("John", 200, 100000);
+        super("John", 200, 100000, "stick spin");
     }
 }
 
