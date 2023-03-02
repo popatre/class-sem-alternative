@@ -12,7 +12,7 @@ class Drummer extends Musician {
     }
     willDuet(performer) {
         // drummers will perform with anyone except singers
-        return performer !== this.hates;
+        return performer.instrument !== this.hates;
     }
 }
 

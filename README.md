@@ -31,21 +31,18 @@ It should have the following properties:
 -   **Drummer**:
 
     -   Instrument: 'drums'
-    -   Special skill: 'stick spin'
     -   earn a flat fee of 500 per gig
     -   Will not duet with 'singer'
 
 -   **Bassist**:
 
     -   Instrument: 'bass'
-    -   Special skill:'slap',
     -   earn a flat fee of 300 per gig
     -   Will not duet with 'guitar'
 
 -   **Guitar**:
 
-    -   instrument: 'guitar'
-    -   special skill: 'shred'
+    -   instrument: 'guitar
     -   earn a flat fee of 600 per gig
     -   Will not duet with 'bass'
 
@@ -56,6 +53,7 @@ It should have the following properties:
     -   John is his name
     -   his money is 100000
     -   His skill level is 200
+    -   Special skill: 'stick spin'
 
 -   KimDeal: famous bassist
 

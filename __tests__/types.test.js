@@ -11,10 +11,6 @@ describe("Drummer", () => {
             const testDrummer = new Drummer("Tom");
             expect(testDrummer.instrument).toBe("drums");
         });
-        test("should have skill set to stick spin", () => {
-            const testDrummer = new Drummer("Tom", 100, 1000);
-            expect(testDrummer.skill).toBe("stick spin");
-        });
     });
     describe("methods", () => {
         test(".playGig - adds flat fee of 500", () => {
@@ -24,8 +20,11 @@ describe("Drummer", () => {
         });
         test(".willDuet - should return appropriate boolean depending on instrument", () => {
             const testDrummer = new Drummer("Tom", 100, 1000);
-            expect(testDrummer.willDuet("bass")).toBe(true);
-            expect(testDrummer.willDuet("singer")).toBe(false);
+            const testSinger = new Musician("Jess", "singer", 100, 10);
+            const testBass = new Musician("Dom", "bass", 100, 10);
+
+            expect(testDrummer.willDuet(testBass)).toBe(true);
+            expect(testDrummer.willDuet(testSinger)).toBe(false);
         });
     });
 });
