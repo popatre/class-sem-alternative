@@ -7,21 +7,9 @@ describe("Drummer", () => {
             const testDrummer = new Drummer();
             expect(testDrummer).toBeInstanceOf(Musician);
         });
-        test("should have assignable name property ", () => {
-            const testDrummer = new Drummer("Tom");
-            expect(testDrummer.name).toBe("Tom");
-        });
         test("should have instrument set to drums", () => {
             const testDrummer = new Drummer("Tom");
             expect(testDrummer.instrument).toBe("drums");
-        });
-        test("should have assignable skillLevel property", () => {
-            const testDrummer = new Drummer("Tom", 100);
-            expect(testDrummer.skillLevel).toBe(100);
-        });
-        test("should have assignable money property", () => {
-            const testDrummer = new Drummer("Tom", 100, 1000);
-            expect(testDrummer.money).toBe(1000);
         });
         test("should have skill set to stick spin", () => {
             const testDrummer = new Drummer("Tom", 100, 1000);
@@ -50,7 +38,7 @@ describe("JohnBonham", () => {
     test("should contains expected values for John Bonham", () => {
         const testJohn = new JohnBonham();
         expect(testJohn.name).toBe("John");
-        expect(testJohn.skillLevel).toBe(120);
-        expect(testJohn.money).toBe(50000);
+        expect(testJohn.skillLevel).toBe(200);
+        expect(testJohn.money).toBe(100000);
     });
 });

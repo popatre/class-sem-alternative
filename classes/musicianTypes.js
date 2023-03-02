@@ -16,6 +16,9 @@ class Drummer extends Musician {
     }
 }
 
+const Drum = new Drummer("Danny", 10, 1000);
+console.log(Drum);
+
 class Bassist extends Musician {
     constructor(name, skillLevel, money) {
         super(name, "bass", skillLevel, money, "slap");
@@ -33,7 +36,7 @@ class Bassist extends Musician {
 
 class JohnBonham extends Drummer {
     constructor() {
-        super("John", 120, 50000);
+        super("John", 200, 100000);
     }
 }
 
