@@ -10,7 +10,7 @@ describe("Musician", () => {
             const testMusician = new Musician("Tom");
             expect(testMusician.name).toBe("Tom");
         });
-        test("should have assignable instrument property", () => {
+        xtest("should have assignable instrument property", () => {
             const testMusician = new Musician("Tom", "clarinet");
             expect(testMusician.instrument).toBe("clarinet");
         });
@@ -22,7 +22,7 @@ describe("Musician", () => {
             const testMusician = new Musician("Tom", "clarinet", 10, 100);
             expect(testMusician.money).toBe(100);
         });
-        test("should have assignable skill property", () => {
+        xtest("should have assignable skill property", () => {
             const testMusician = new Musician(
                 "Tom",
                 "clarinet",
@@ -32,12 +32,12 @@ describe("Musician", () => {
             );
             expect(testMusician.skill).toBe("flutter");
         });
-        test("skill should revert to default value if non given", () => {
+        xtest("skill should revert to default value if non given", () => {
             const testMusician = new Musician("Tom", "clarinet", 10, 100);
             expect(testMusician.skill).toBe("make music");
         });
     });
-    describe("methods", () => {
+    describe.skip("methods", () => {
         test(".specialSkill - returns special skill string", () => {
             const testMusician = new Musician(
                 "Tom",

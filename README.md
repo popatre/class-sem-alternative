@@ -7,10 +7,8 @@ Create a Musician class
 It should have the following properties:
 
 -   name: The name given
--   instrument: the instrument they play - defaults to 'singer'
 -   skillLevel: skill on the instrument
 -   money: current money they have/can earn
--   skill: their special skill - defaults to 'make music'
 
 ### Methods
 
@@ -21,10 +19,6 @@ It should have the following properties:
 -   playGig:
 
     -   Should take a number as an argument which will increase the musician's current money count
-
--   willDuet:
-
-    -   Will take a Musician as an argument and return a boolean if the musician will duet with them. By default, a musician will duet with any other instrument
 
 ## Musician Types - should extend Musician
 
@@ -52,19 +46,18 @@ It should have the following properties:
 
     -   John is his name
     -   his money is 100000
-    -   His skill level is 200
     -   Special skill: 'stick spin'
 
 -   KimDeal: famous bassist
 
     -   Kim is her name
     -   money is 25000
-    -   skill level 210
+    -   special skill is 'slap'
 
 -   Slash: famous guitarist
     -   Slash
     -   money 45000
-    -   skill level 190
+    -   special skill is 'shred'
 
 ## Venue
 
