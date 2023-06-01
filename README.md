@@ -22,6 +22,10 @@ It should have the following properties:
 
 ## Musician Types - should extend Musician
 
+Methods:
+
+-   willDuet - returns a boolean depending on the duetting instrument
+
 -   **Drummer**:
 
     -   Instrument: 'drums'

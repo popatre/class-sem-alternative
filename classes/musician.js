@@ -11,5 +11,8 @@ class Musician {
         this.money += pay;
     }
 }
+class Drummer {}
 
-module.exports = Musician;
+class JohnBonham {}
+
+module.exports = { Musician, Drummer, JohnBonham };
