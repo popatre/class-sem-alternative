@@ -1,4 +1,5 @@
 const { Musician, Drummer, JohnBonham } = require("../classes/musician");
+
 describe("Drummer", () => {
     describe("properties", () => {
         test("should extend Musician class", () => {

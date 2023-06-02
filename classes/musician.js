@@ -1,8 +1,8 @@
 class Musician {
-    constructor(name, money) {
+    constructor(name, money, skill = "make music") {
         this.name = name;
         this.money = money;
-        this.skill = "make music";
+        this.skill = skill;
     }
     specialSkill() {
         return `My special skill is ${this.skill}`;

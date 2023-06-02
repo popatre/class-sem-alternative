@@ -7,8 +7,8 @@ Create a Musician class
 It should have the following properties:
 
 -   name: The name given
--   skillLevel: skill on the instrument
 -   money: current money they have/can earn
+-   skill: skill on the instrument - defaults to 'make music'
 
 ### Methods
 
