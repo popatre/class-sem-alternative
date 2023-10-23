@@ -11,17 +11,31 @@ describe("Venue", () => {
         testVenue.makeBooking(John);
         expect(testVenue.currentlyBooked[0]).toEqual(John);
     });
-    test(".makeBooking returns currently booked when already a booking", () => {
+    // test(".makeBooking returns currently booked when already a booking", () => {
+    //     const testVenue = new Venue();
+    //     const John = new JohnBonham();
+    //     testVenue.makeBooking(John);
+    //     expect(testVenue.makeBooking(John)).toEqual(John);
+    // });
+    test(".makeBooking returns currently performing musician when invoked with no arguments and musician booked", () => {
+        const consoleSpy = jest.spyOn(console, "log");
         const testVenue = new Venue();
         const John = new JohnBonham();
         testVenue.makeBooking(John);
-        expect(testVenue.makeBooking(John)).toEqual(John);
+        expect(testVenue.makeBooking()).toEqual(John);
+        expect(consoleSpy).toHaveBeenCalledWith(`John - go perform now`);
+    });
+    test(".makeBooking notifies if not performer when invoked with no arguments", () => {
+        const consoleSpy = jest.spyOn(console, "log");
+        const testVenue = new Venue();
+        testVenue.makeBooking();
+        expect(consoleSpy).toHaveBeenCalledWith("No one to go on stage");
     });
     test(".isVacant- return true when no one booked to perform ", () => {
         const testVenue = new Venue();
         expect(testVenue.isVacant()).toBe(true);
     });
-    test(".isVacant- return false when currently a booking", () => {
+    test(".isVacant - return false when currently a booking", () => {
         const testVenue = new Venue();
         const John = new JohnBonham();
         testVenue.makeBooking(John);

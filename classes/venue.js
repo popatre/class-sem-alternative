@@ -5,10 +5,13 @@ class Venue {
 
     makeBooking(musician) {
         if (this.isVacant()) {
-            this.currentlyBooked.push(musician);
-            console.log(`You have booked ${musician.name}`);
+            if (!musician) {
+                console.log("No one to go on stage");
+            } else {
+                this.currentlyBooked.push(musician);
+            }
         } else {
-            console.log(`${musician.name} is already booked to perform`);
+            console.log(`${this.currentlyBooked[0].name} - go perform now`);
             return this.currentlyBooked[0];
         }
     }
