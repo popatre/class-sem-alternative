@@ -16,6 +16,9 @@ class Venue {
         return this.currentlyBooked.length === 0;
     }
     checkBill() {
+        if (!this.isVacant()) {
+            return this.currentlyBooked[0].name;
+        }
         return "no show";
     }
 }
