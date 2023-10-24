@@ -74,7 +74,7 @@ Venue behaviours are:
 
 -   takes a musician as an argument and books them, as long as the venue does not currently have anyone booked.Should console log 'you have booked <musicanName>'
 
-    -   Otherwise - will not let you book another musician
+    -   If there is already a performer, the method will not let you book another musician
 
     -   if invoked with no arguments - logs who is currently booked to perform
 
