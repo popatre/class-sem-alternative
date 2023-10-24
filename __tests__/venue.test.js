@@ -11,12 +11,6 @@ describe("Venue", () => {
         testVenue.makeBooking(John);
         expect(testVenue.currentlyBooked[0]).toEqual(John);
     });
-    // test(".makeBooking returns currently booked when already a booking", () => {
-    //     const testVenue = new Venue();
-    //     const John = new JohnBonham();
-    //     testVenue.makeBooking(John);
-    //     expect(testVenue.makeBooking(John)).toEqual(John);
-    // });
     test(".makeBooking returns currently performing musician when invoked with no arguments and musician booked", () => {
         const consoleSpy = jest.spyOn(console, "log");
         const testVenue = new Venue();
