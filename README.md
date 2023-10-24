@@ -76,7 +76,7 @@ Venue behaviours are:
 
     -   If there is already a performer, the method will not let you book another musician
 
-    -   if invoked with no arguments - logs who is currently booked to perform
+    -   if invoked with no arguments - tells the musician to get on stage and also returns them
 
     -   if no one is booked, lets you know
 
