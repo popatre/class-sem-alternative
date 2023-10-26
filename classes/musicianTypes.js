@@ -1,4 +1,4 @@
-// const Musician = require("./musician");
+const { Musician } = require("./musician");
 
 // class Drummer extends Musician {
 //     constructor(name, skillLevel, money, skill = "fill") {
@@ -16,20 +16,21 @@
 //     }
 // }
 
-// class Bassist extends Musician {
-//     constructor(name, skillLevel, money) {
-//         super(name, "bass", skillLevel, money, "slap");
-//         this.hates = "guitar";
-//     }
-//     playGig() {
-//         // bass get a flat fee of 500
-//         this.money += 300;
-//     }
-//     willDuet(performer) {
-//         // bass will perform with anyone except guitar players
-//         return performer !== this.hates;
-//     }
-// }
+class Bassist extends Musician {
+    constructor(name, money) {
+        super(name, money, "slap");
+        this.hates = "guitar";
+        this.instrument = "bass";
+    }
+    playGig() {
+        // bass get a flat fee of 500
+        this.money += 300;
+    }
+    willDuet(performer) {
+        // bass will perform with anyone except guitar players
+        return performer !== this.hates;
+    }
+}
 
 // class JohnBonham extends Drummer {
 //     constructor() {
@@ -37,4 +38,4 @@
 //     }
 // }
 
-// module.exports = { Drummer, Bassist, JohnBonham };
+module.exports = { Bassist };

@@ -10,10 +10,6 @@ describe("Musician", () => {
             const testMusician = new Musician("Tom");
             expect(testMusician.name).toBe("Tom");
         });
-        xtest("should have assignable instrument property", () => {
-            const testMusician = new Musician("Tom", "clarinet");
-            expect(testMusician.instrument).toBe("clarinet");
-        });
         test("should have assignable skillLevel property", () => {
             const testMusician = new Musician("Tom", "clarinet", 10);
             expect(testMusician.skillLevel).toBe(10);

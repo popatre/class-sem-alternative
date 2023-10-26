@@ -30,7 +30,7 @@ Methods:
 
     -   Instrument: 'drums'
     -   earn a flat fee of 500 per gig
-    -   Will not duet with 'singer'
+    -   Will not duet with 'bass'
 
 -   **Bassist**:
 
